@@ -4,6 +4,11 @@ import './Contact.css';
 
 const API_URL = import.meta.env.VITE_API_URL || '/api';
 
+const PHONE_NUMBERS = [
+  { label: 'Shop', number: '0332 4577183', href: 'tel:+923324577183' },
+  { label: 'Landline', number: '042 35229393', href: 'tel:+924235229393' },
+];
+
 const initialForm = { name: '', email: '', phone: '', message: '', website: '' };
 
 function Contact() {
@@ -49,26 +54,36 @@ function Contact() {
         <WaveDivider fill="#0B5FA8" />
       </div>
       <div className="container contact-grid">
-        <div className="contact-intro">
-          <h2>Get Purflo delivered.</h2>
-          <p>
-            Tell us your bottle size and delivery area, and we'll set up a schedule that fits
-            your home, office or event.
-          </p>
-          <ul className="contact-details">
-            <li>
-              <strong>Phone</strong>
-              <span>+92 300 0000000</span>
-            </li>
-            <li>
-              <strong>Email</strong>
-              <span>orders@purflowater.com</span>
-            </li>
-            <li>
-              <strong>Delivery hours</strong>
-              <span>Mon–Sat, 9am–7pm</span>
-            </li>
-          </ul>
+        <div className="contact-side">
+          <div className="contact-intro">
+            <h2>Get Purflo delivered.</h2>
+            <p>
+              Call us with your bottle size and delivery address, and we'll get it to your door.
+              Prefer to write instead? Use the form.
+            </p>
+            <p className="contact-hours">Delivery hours: Mon–Sat, 9am–7pm</p>
+          </div>
+
+          <div className="contact-card">
+            <div className="contact-card-block">
+              <span className="contact-card-label">Call to order</span>
+              <ul className="phone-list">
+                {PHONE_NUMBERS.map((phone) => (
+                  <li key={phone.number}>
+                    <a href={phone.href} className="phone-link">
+                      {phone.number}
+                    </a>
+                    <span className="phone-tag">{phone.label}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="contact-card-block">
+              <span className="contact-card-label">Visit the shop</span>
+              <address>91-H Architect Society, Basharat Chowk, Lahore</address>
+            </div>
+          </div>
         </div>
 
         <form className="contact-form" onSubmit={handleSubmit} noValidate>

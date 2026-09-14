@@ -32,11 +32,20 @@ function Footer() {
         </div>
 
         <div className="footer-col">
-          <h4>Contact</h4>
+          <h4>Call to order</h4>
           <ul>
-            <li>+92 300 0000000</li>
-            <li>orders@purflowater.com</li>
+            <li><a href="tel:+923324577183">0332 4577183</a></li>
+            <li><a href="tel:+924235229393">042 35229393</a></li>
             <li>Mon–Sat, 9am–7pm</li>
+          </ul>
+        </div>
+
+        <div className="footer-col">
+          <h4>Visit the shop</h4>
+          <ul>
+            <li>91-H Architect Society</li>
+            <li>Basharat Chowk</li>
+            <li>Lahore</li>
           </ul>
         </div>
       </div>

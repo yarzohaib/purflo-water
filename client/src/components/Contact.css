@@ -1,6 +1,7 @@
 .contact {
   background: var(--color-primary);
   padding-top: 0;
+  padding-bottom: var(--space-6);
   color: var(--color-white);
 }
 
@@ -10,9 +11,15 @@
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-columns: 0.85fr 1.15fr;
   gap: var(--space-5);
   align-items: start;
+}
+
+.contact-side {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
 }
 
 .contact-intro h2 {
@@ -26,27 +33,77 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
-.contact-details {
+.contact-hours {
+  margin-top: var(--space-3);
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.contact-card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  box-shadow: var(--shadow-soft);
+}
+
+.contact-card-label {
+  display: block;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-2);
+}
+
+.phone-list {
   list-style: none;
+  margin: 0;
   padding: 0;
-  margin-top: var(--space-4);
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
 }
 
-.contact-details li {
+.phone-list li {
   display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: var(--space-1);
+  align-items: baseline;
+  gap: var(--space-2);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-line);
 }
 
-.contact-details strong {
-  font-size: var(--fs-xs);
-  color: #BFE0F5;
-  text-transform: none;
+.phone-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
+
+.phone-link {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: 600;
+  color: var(--color-navy);
+  text-decoration: none;
+}
+
+.phone-link:hover {
+  color: var(--color-primary);
+}
+
+.phone-tag {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+}
+
+.contact-card-block address {
+  font-style: normal;
+  color: var(--color-navy);
+  font-size: var(--fs-base);
+  line-height: 1.5;
+}
+
+/* --- Form --- */
 
 .contact-form {
   background: var(--color-white);
@@ -78,14 +135,14 @@
   gap: var(--space-2);
 }
 
-label {
+.contact-form label {
   font-size: var(--fs-xs);
   font-weight: 600;
   color: var(--color-navy);
 }
 
-input,
-textarea {
+.contact-form input,
+.contact-form textarea {
   font-family: var(--font-body);
   font-size: var(--fs-sm);
   padding: 0.75rem 0.9rem;
@@ -96,8 +153,8 @@ textarea {
   resize: vertical;
 }
 
-input:focus,
-textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
   border-color: var(--color-primary);
 }
 
