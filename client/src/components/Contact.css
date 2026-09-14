@@ -1,0 +1,134 @@
+.contact {
+  background: var(--color-primary);
+  padding-top: 0;
+  color: var(--color-white);
+}
+
+.contact-top-divider {
+  margin-top: -6px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.contact-intro h2 {
+  color: var(--color-white);
+  font-size: var(--fs-2xl);
+  font-weight: 600;
+}
+
+.contact-intro p {
+  margin-top: var(--space-2);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+  margin-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.contact-details li {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: var(--space-1);
+}
+
+.contact-details strong {
+  font-size: var(--fs-xs);
+  color: #BFE0F5;
+  text-transform: none;
+}
+
+.contact-form {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  box-shadow: var(--shadow-soft);
+}
+
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-row-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+}
+
+label {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+input,
+textarea {
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  padding: 0.75rem 0.9rem;
+  border: 1.5px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  color: var(--color-navy);
+  background: var(--color-white);
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--color-primary);
+}
+
+.contact-form .btn {
+  margin-top: var(--space-1);
+  align-self: flex-start;
+}
+
+.form-feedback {
+  font-size: var(--fs-sm);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  margin: 0;
+}
+
+.form-feedback.success {
+  background: #E6F6EA;
+  color: #1E7A3B;
+}
+
+.form-feedback.error {
+  background: #FBEAEA;
+  color: #B23A3A;
+}
+
+@media (max-width: 860px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row-split {
+    grid-template-columns: 1fr;
+  }
+}
