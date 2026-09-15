@@ -40,11 +40,11 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="footer-col">
+              <div className="footer-col">
           <h4>Visit the shop</h4>
           <ul>
-            <li>91-H Architect Society</li>
-            <li>Basharat Chowk</li>
+            <li>Jan Mohammad Road</li>
+            <li>Architect Engineers Housing Society</li>
             <li>Lahore</li>
           </ul>
         </div>

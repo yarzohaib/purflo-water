@@ -81,7 +81,10 @@ function Contact() {
 
             <div className="contact-card-block">
               <span className="contact-card-label">Visit the shop</span>
-              <address>91-H Architect Society, Basharat Chowk, Lahore</address>
+              <p className="contact-card-text">
+                We're located in the heart of Lahore.
+              </p>
+              <address>Jan Mohammad Road, Architect Engineers Housing Society, Lahore</address>
             </div>
           </div>
         </div>

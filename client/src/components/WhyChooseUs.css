@@ -1,13 +1,12 @@
-.why-us-grid {
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: var(--space-5);
+.why-us-intro {
+  max-width: 60ch;
+  margin-bottom: var(--space-5);
 }
 
 .why-us-intro h2 {
   font-size: var(--fs-2xl);
   font-weight: 600;
-  max-width: 14ch;
+  max-width: 20ch;
 }
 
 .why-us-intro p {
@@ -15,10 +14,80 @@
   color: var(--color-text-muted);
 }
 
-.why-us-list {
-  display: flex;
-  flex-direction: column;
+/* --- Featured bacteria removal process --- */
+
+.bacteria-block {
+  background: var(--color-sky);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.bacteria-block-heading h3 {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+}
+
+.bacteria-block-heading p {
+  margin-top: 0.4rem;
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+.bacteria-steps {
+  list-style: none;
+  margin: var(--space-3) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-3);
+}
+
+.bacteria-step {
+  display: flex;
+  gap: var(--space-2);
+  background: var(--color-white);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3);
+}
+
+.bacteria-step-number {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bacteria-step h4 {
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--color-navy);
+  margin: 0;
+}
+
+.bacteria-step p {
+  margin-top: 0.35rem;
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+/* --- General reasons list --- */
+
+.why-us-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3) var(--space-5);
 }
 
 .why-us-item {
@@ -26,10 +95,6 @@
   gap: var(--space-2);
   padding-bottom: var(--space-3);
   border-bottom: 1px solid var(--color-line);
-}
-
-.why-us-item:last-child {
-  border-bottom: none;
 }
 
 .why-us-mark {
@@ -54,7 +119,11 @@
 }
 
 @media (max-width: 860px) {
-  .why-us-grid {
+  .bacteria-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .why-us-list {
     grid-template-columns: 1fr;
   }
 

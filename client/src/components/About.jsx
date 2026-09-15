@@ -15,7 +15,7 @@ function About() {
           </p>
           <p>
             Every bottle goes through multi-stage filtration and mineral balancing before it's
-            sealed, so a 500ml on the sidelines tastes the same as a 19L in your office cooler.
+            sealed, so a 500ml on the sidelines tastes the same as a 19L on your home dispenser.
           </p>
           <div className="about-stats">
             <div>

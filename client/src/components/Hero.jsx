@@ -13,15 +13,15 @@ function Hero() {
         </h1>
         <p className="hero-sub">
           Purflo is bottled drinking water sourced and purified with one goal: water that tastes
-          exactly like water should. From homes to offices to the sidelines, in 19L, 6L, 1.5L
-          and 500ml bottles.
+          exactly like water should. For your home first — kitchen, dispenser, kids' bottles —
+          and everywhere else too, in 19L, 6L, 1.5L and 500ml bottles.
         </p>
         <div className="hero-actions">
           <a href="#products" className="btn btn-primary">
             See our bottles
           </a>
           <a href="#contact" className="btn btn-outline">
-            Order for your home or office
+            Order for home delivery
           </a>
         </div>
       </div>

@@ -6,10 +6,10 @@ import './Products.css';
 const PRODUCTS = [
   {
     size: '19L',
-    title: 'Office & Home Cooler',
+    title: 'Home Dispenser Bottle',
     description:
-      'Our biggest bottle, built for water coolers and dispensers. Reusable and sanitized between refills.',
-    tag: 'Best for offices',
+      'Our biggest bottle, built for home water dispensers. Reusable and sanitized between refills.',
+    tag: 'Best for homes',
   },
   {
     size: '6L',
